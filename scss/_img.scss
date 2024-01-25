@@ -1,0 +1,131 @@
+.logo-simple {
+  margin-left: 20px;
+  width: 60px;
+}
+.logo-completo {
+  width: 150px;
+}
+.video-index {
+  z-index: -1;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.contenedor-img {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contenedor-tarjeta {
+  margin: 20px;
+  a {
+    display: inline-block;
+  }
+}
+.contenedor-tarjeta:hover figure img {
+  filter: blur(4px);
+}
+.contenedor-tarjeta:hover figure {
+  transform: perspective(600px) rotateY(180deg);
+}
+figure {
+  width: 30vw;
+  margin: 0;
+  position: relative;
+  transition: all ease 0.5s;
+  transform-style: preserve-3d;
+  transform: perspective(600px) rotateY(0deg);
+}
+figure .frontal,
+figure .trasera {
+  width: 100%;
+  height: 100%;
+  border-radius: 25%;
+  transition: all ease 0.5s;
+}
+figure .frontal {
+  display: block;
+}
+figure .trasera {
+  position: absolute;
+  top: 0;
+  color: black;
+  padding: 20px;
+  transform: perspective(600px) rotateY(180deg);
+  backface-visibility: hidden;
+  overflow: auto;
+}
+.contenedor-general {
+  display: flex;
+  flex-direction: column;
+}
+.trasera h2 {
+  font-size: xx-large;
+  margin-top: 15vh;
+  margin-left: 3vw;
+}
+.trasera p {
+  font-size: xx-large;
+}
+.sitio-construccion {
+  width: 100vw;
+}
+//.................................................mujeres y hombres..................................................................
+.contenedor-galeria {
+  display: flex;
+  flex-direction: column;
+}
+.contenedor-galeria-1 {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+.img-galeria-1 {
+  z-index: -1;
+  max-width: 600px;
+  margin-left: 10vw;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.img-galeria {
+  z-index: -1;
+  max-width: 600px;
+  margin-top: 5vh;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.img-galeria-1 {
+  margin-top: 5vh;
+  animation-name: imagen-galeria-1;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+@keyframes imagen-galeria-1 {
+  50% {
+    transform: translate(100%);
+  }
+  }
+.img-galeria {
+  margin-top: 5vh;
+  animation-name: imagen-galeria;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+@keyframes imagen-galeria {
+  50% {
+    transform: translate(-100%);
+  }
+}

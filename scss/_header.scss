@@ -1,0 +1,30 @@
+.caja-titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+}
+.titulo {
+  padding-top: 10px;
+  color: white;
+}
+.caja-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #c5964b;
+}
+
+.navegador {
+  padding-top: 10px;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+}

@@ -1,0 +1,206 @@
+@media (min-width: 800px) {
+  .redes-dis {
+    display: none;
+  }
+  .redes-dis-contacto {
+    display: none;
+  }
+}
+
+//.......................................min 600.............................................................
+@media (min-width: 600px) {
+  .caja-redes-mob {
+    display: flex;
+    position: absolute;
+    margin-left: 90%;
+    margin-top: -20%;
+  }
+  .menu-mob {
+    display: none;
+  }
+  .nav-items:hover {
+    animation-name: navegador;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-duration: 10s;
+  }
+  @keyframes navegador {
+    0% {
+      transform: scale(2) translateY(4px);
+    }
+  }
+}
+
+//...............................................800px......................................................
+@media (max-width: 800px) {
+  .caja-redes {
+    display: none;
+  }
+  .terminos-caja {
+    .terminos-titulo {
+      font-size: 25px;
+    }
+    .terminos-texto {
+      font-size: 10px;
+    }
+  }
+  .caja-historia {
+    h2 {
+      font-size: 35px;
+    }
+  }
+  .caja-texto-h {
+    p {
+      font-size: 10px;
+    }
+  }
+  .caja-mapa {
+    display: none;
+  }
+  .contactos {
+    .titulo-formulario {
+        margin-left: 30px;
+      font-size: 35px;
+    }
+  }
+  .trasera {
+    h2 {
+      font-size: 22px;
+      margin-top: 5vh;
+      margin-left: 1vw;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+//.......................................600px...........................................................
+
+@media (max-width: 600px) {
+  .logo-completo {
+    display: none;
+  }
+  .caja-redes-mob ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .mantenimiento {
+    display: none;
+  }
+  .pag-mantenimiento {
+    background-image: url(../img/logo2.jpg);
+  }
+
+  .trasera {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  .acc {
+    h2 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  nav {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    margin-left: 5%;
+  }
+  .caja-nav-mob:hover ul {
+    z-index: 100;
+      visibility: visible;
+      position: relative;
+      display: block;
+        margin-bottom: 5px;
+        li {
+            border: solid 1px white;
+            width: 100px;
+            background-color: black;
+            a {
+                width: 100px;
+            }
+        }
+    }
+  .navegador {
+
+    background-color: transparent;
+    visibility: hidden;
+    display: block;
+    margin-left: 5%;
+  }
+  .video-index {
+    margin-top: 100px;
+  }
+  .menu-mob {
+    width: 45px;
+    height: 60px;
+    margin-left: 10%;
+    animation-name: menu-mob;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes menu-mob {
+    
+    50% {
+      transform: rotate(360deg);
+    }
+    80% {
+      transform: scale(1.5);
+    }
+  }
+  .logo-menu {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .nav-mob {
+    position: absolute;
+      display: flex;
+      flex-direction: column;
+  }
+}
+//...........................................500px.........................................................
+
+@media (max-width: 500px) {
+  .video-index {
+    display: none;
+  }
+  .contactos {
+    .titulo-formulario {
+      font-size: 25px;
+    }
+  }
+}
+
+//.............................................450px...........................................................
+@media (max-width: 450px) {
+  .trasera {
+    display: none;
+  }
+  .contenedor-tarjeta:hover figure img {
+    filter: blur(0);
+  }
+  .contenedor-general {
+    display: grid;
+    grid-row: 1fr 1fr;
+    margin: 2vh auto;
+  }
+  .contenedor-img {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
